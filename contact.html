@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ULLI | University of Love & Life</title>
+    <link rel="icon" href="./assets/stickerhead.png">
+    <link rel="stylesheet" href="ground.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet"><!--Fuentes-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous"><!--Ìcono del menú desplegable-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css" integrity="sha384-ejwKkLla8gPP8t2u0eQyL0Q/4ItcnyveF505U0NIobD/SMsNyXrLti6CWaD0L52l" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+
+
+    
+
+    <!--https://www.bootstrapcdn.com/fontawesome/-->
+</head>
+<body>
+    <section class="sub-header1">
+
+        <nav>
+            <a href="index.html"><img src="assets/logominewhite.png" alt="Logo University of live and love" width="272" height="78px"></a>
+            <div class="nav-links" id="navLinks">
+                <!--<i class="fa fa-times" aria-hidden="true"></i>-->
+                <!--ìconos-->
+                <img src="./assets/458594.png" class="fa fa-times" alt="close icon" width="20px" height="20px" onclick="hideMenu()">
+                
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="./course.html">Courses</a></li>
+                    <li><a href="./blog.html">Blog</a></li>
+                    <li><a href="./contact.html">Contact Info</a></li>
+                </ul>
+
+            </div><!--Aquì termina links de barra de navegaci+on-->
+
+            <!--Ícono de menú-->
+            <img src="./assets/menu-icon-white-2.jpg" class="fa fa-bars" onclick="showMenu()" alt="menu icon" width="20px" height="20px">
+            <!--<i class="fa fa-bars"  onclick="showMenu()"></i>-->
+
+
+
+        </nav><!--Aquì termina batta de navegación-->
+    <!--Seguimos en la sección de encabezado-->
+        <h1>Contact Us</h1>
+
+    </section><!--Aquì termina header-->
+
+    <!------------------------Contact info---------------------------->
+
+<section class="location">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.8139102994555!2d-99.18412368513066!3d19.420444746101765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1fecd47ed8f23%3A0xa6e0008524818b32!2sChapultepec%20Castle!5e0!3m2!1sen!2smx!4v1646359694732!5m2!1sen!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+</section>
+
+<section class="contact-us">
+    <div class="row">
+        <div class="contact-col">
+            <div>
+                <i class="bi bi-house-heart"></i>
+                <span>
+                    <h5>Love Road, Lover Building</h5>
+                    <p>Ciudad de México, México</p>
+                </span>
+            </div>
+            <div>
+                <i class="bi bi-telephone"></i>
+                <span>
+                    <h5>7777777777</h5>
+                    <p>Monday to saturday</p>
+                </span>
+            </div>
+            <div>
+                <i class="bi bi-envelope-fill"></i>
+                <span>
+                    <h5>ullicontact@ulli.com</h5>
+                    <p>Email us your query</p>
+                </span>
+            </div>
+
+        </div>
+
+        <div class="contact-col">
+            <form action="form-handler.php" method="post">
+                <input type="text" name="name" placeholder="Enter your name" required>
+                <input type="email" name="email" placeholder="Enter your email address" required>
+                <input type="text" name="subject" placeholder="Enter your Subject" required>
+                <textarea rows="8" placeholder="Message (PS I love you)"required></textarea>
+                <button type="submit" name="message" class="hero-btn red-bt">Send Message</button>
+
+            </form>
+        </div>
+    </div>
+</section>
+
+
+
+<!------------------Footer----------------------->
+<section class="footer">
+    <h4>About Us</h4>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <div class="icons">
+            <i class="bi bi-facebook"></i>
+            <i class="bi bi-instagram"></i>
+            <i class="bi bi-twitter"></i>
+            <i class="bi bi-linkedin"></i>
+        </div>
+        <p>Made with <i class="bi bi-heart"></i></i> by Alejandro Toledano</p>
+</section>
+
+<!--JavaScript para cerrar y abrir el menú-->
+    <script>
+        var navLinks=document.getElementById("navLinks")
+        function showMenu(){
+            navLinks.style.right="0";
+        }
+
+        function hideMenu(){
+            navLinks.style.right="-200px";
+        }
+    </script>
+
+
+</body>
+</html>
